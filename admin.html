@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="form_wrapper form_create">
+        <h2>CREAR PRODUCTO</h2>
+        <form action="https://prog-3-mapa-backend.vercel.app/markers" method="POST" id="form_alta">
+            <input type="text" placeholder="Nombre" name="nombre" />
+            <input type="text" placeholder="Descripción" name="descripcion" />
+            <input type="text" placeholder="Lat" name="lat" />
+            <input type="text" placeholder="Lng" name="lng" />
+            <input type="text" placeholder="Type" name="type" />
+            <input type="submit" name="submit" value="Crear">
+        </form>
+    </div>
+    <div class="form_wrapper form_edit">
+        <h2>EDITAR PRODUCTO</h2>
+        <form id="form_edit">
+            <input type="text" placeholder="Nombre" name="nombre" />
+            <input type="text" placeholder="Descripción" name="descripcion" />
+            <input type="text" placeholder="Lat" name="lat" />
+            <input type="text" placeholder="Lng" name="lng" />
+            <input type="text" placeholder="Type" name="type" />
+            <input type="hidden" placeholder="Type" name="_id" />
+            <input type="submit" name="submit" value="Editar">
+        </form>
+    </div>
+
+    <div class="list_wrapper">
+        <a id="titulo" href="/config.html">Clickeame</a>
+        <div class="list">
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+        integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/admin.js"></script>
+</body>
+
+</html>
